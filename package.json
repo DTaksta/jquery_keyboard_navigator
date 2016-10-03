@@ -1,0 +1,29 @@
+{
+	"name": "jquery_keyboard_nav_plugin",
+	"version": "1.0.0",
+	"description": "Basic keyboard navigation given a list of selectors",
+	"main": "test_page.html",
+	"directories": {
+	"test": "tests"
+	},
+	"scripts": {
+		"start": "node myKeyboardNavigatorPlugin.js",
+		"test": "./node_modules/.bin/mocha --reporter spec ./tests/*.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "#"
+	},
+	"keywords": [
+		"jquery",
+		"shortcut",
+		"navigation",
+		"plugin"
+	],
+	"author": "Deon Takpuie",
+	"license": "ISC",
+	"dependencies": {
+		"chai": "^3.5.0",
+		"mocha": "^3.1.0"
+	}
+}

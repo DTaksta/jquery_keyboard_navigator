@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Navigation Page</title>
+	</head>
+	<body>
+		<h1 style='text-align:center'> Test Page - Jquery Keyboard Navigation Plugin </h1>
+		<small>Initialize like this - $('default').myKeyboardNavigatorPlugin({ selector: ['img', 'h2']}); Left and Right, and J and K, to go back and forth between selected elements, img and h2 in this case.</small>
+		<h2>Spectacular Mountain 1 </h2>
+		<h3> skip me</h3>
+		<img src="images/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+		<h2>Spectacular Mountain 2 </h2>
+		<img src="images/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+		<h2>Spectacular Mountain 3 </h2>
+		<img src="images/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+		<h2>Spectacular Mountain 4 </h2>
+		<img src="images/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+		<h2>Spectacular Mountain 5 </h2>
+		<img src="images/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+		<h2>Spectacular Mountain 6 </h2>
+		<img src="images/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+		<h2>Spectacular Mountain 7 </h2>
+		<img src="images/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+		<h2>Spectacular Mountain 8 </h2>
+		<img src="images/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+		<h2>Spectacular Mountain 9 </h2>
+		<img src="images/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+		<script src="mocha.js"></script>
+		<script src="chai.js"></script>
+		<script>
+			mocha.ui('bdd');
+			mocha.reporter('html');
+			var expect = chai.expect;
+		</script>
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="myKeyboardNavigatorPlugin.js"></script>
+
+		<script>
+		$('default').myKeyboardNavigatorPlugin({ selector: ['img', 'h2']});
+
+		//UNIT TEST. 1 - No Selectors Entered. 2 - Selectors do Not Exists. 
+		</script>
+
+		<script>
+			mocha.run();
+		</script>
+	</body>
+</html>
+
